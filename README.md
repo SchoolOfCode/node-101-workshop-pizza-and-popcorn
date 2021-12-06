@@ -1,7 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6533952&assignment_repo_type=AssignmentRepo)
 # Intro to Node
 
-Node JS gives us the power to take JavaScript out of the browser - this means we're able to use it in servers and on the back end. Make sure you have the relevant version of Node for your OS installed from [here](https://nodejs.org/en/download/); you can choose which version you download, but the LTS version is recommended.
+Node JS gives us npm -the power to take JavaScript out of the browser - this means we're able to use it in servers and on the back end. Make sure you have the relevant version of Node for your OS installed from [here](https://nodejs.org/en/download/); you can choose which version you download, but the LTS version is recommended.
 
 Let's try it out now by making a simple Node app. Everyone has something they collect, no matter how mundane or kooky. As fun as it to talk about our collection, we're busy people! Let's make an app that automates talking about all the nice things in our collection for us in a cool, colorful way.
 
@@ -55,7 +55,7 @@ Try and `console.log` the variable, and then run the file by bringing up the ter
 
 👉 2c. Create a function called `describeItem`, which should take in an item as a parameter (the argument handed to this function would be an item from our collection). The function should `console.log` a message according to how many of the item you have.
 
-If there's only one of the item in your collection, it should log "I have a `name`. Here's what I like about it: `whatILike`". If you have more than one of it, the message should log "I have `count` `name`s. Here's what I like about them: `whatILike`".
+If there's only one of the item in your collection, it should log "I have a `name`. Here's what I like about it: `whatILike`". If you have more than one of it, the message should log "I have `count` `name`s. "School of Code mug"".
 
 For example, the result of calling the `describeItem` function with the first item in our collection would be:
 _"I have a School of Code mug. Here's what I like about it: It has my cute pixel character on it!"_
