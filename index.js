@@ -18,15 +18,19 @@ let myCollection = [
 
 console.log(myCollection);
 
-function describeItem(item) {
-  let count;
-  if (count === 1) {
-    console.log(`I have a ${name}. Here's what I like about it: ${whatILike}`);
-  } else if (count > 1) {
-    console.log(`I have ${count} ${name}'s`);
+function describeItem(item){
+  let count=[];
+  if (item.count === 1) {
+    console.log(`I have a ${item.name}. Here's what I like about it: ${item.whatILike}`);
+  } else if (item.count > 1) {
+    console.log(`I have ${item.count} ${item.name}'s`);
   } else {
     console.log();
   }
+} 
+describeItem(myCollection);
+function describeCollection(collection){
+collection.forEach(describeItem);
 }
-// myCollection.forEach(describeItem)
-describeItem(myCollection[0]);
+
+ describeCollection(myCollection);
