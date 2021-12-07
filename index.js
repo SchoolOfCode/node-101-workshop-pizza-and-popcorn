@@ -1,22 +1,4 @@
-let myCollection = [
-  {
-    name: "School of Code mug",
-    count: 1,
-    whatILike: "It has my cute pixel character on it!",
-  },
-  {
-    name: "School of Code hat",
-    count: 2,
-    whatILike: "An often overlooked fashion accessory",
-  },
-  {
-    name: "School of Code pillow",
-    count: 1,
-    whatILike: "Eat. Sleep. Code. Repeat :)",
-  },
-];
-
-console.log(myCollection);
+import myCollection from "./collection.js";
 
 function describeItem(item){
   let count=[];
@@ -28,9 +10,10 @@ function describeItem(item){
     console.log();
   }
 } 
-describeItem(myCollection);
 function describeCollection(collection){
-collection.forEach(describeItem);
-}
+  collection.forEach(describeItem);
+  }
+  describeCollection(myCollection);
 
- describeCollection(myCollection);
+import chalk from 'chalk';
+console.log(chalk.blue('Hello world!'));
