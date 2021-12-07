@@ -3,9 +3,9 @@ import myCollection from "./collection.js";
 function describeItem(item){
   let count=[];
   if (item.count === 1) {
-    console.log(`I have a ${chalk.cyan(item.name)}. Here's what I like about it: ${chalk.green(item.whatILike)}`);
+    console.log(`I have a ${chalk.cyan.bgRed.underline.bold(item.name)}. Here's what I like about it: ${chalk.green.bgYellow.underline.bold(item.whatILike)}`);
   } else if (item.count > 1) {
-    console.log(`I have ${chalk.yellow(item.count)} ${chalk.cyan(item.name)}'s`);
+    console.log(`I have ${chalk.yellow.bgBlue.underline.bold(item.count)} ${chalk.cyan.bgRed.underline.bold(item.name)}'s`);
   } else {
     console.log();
   }
